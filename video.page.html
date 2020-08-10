@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="medium">
+      <ion-buttons slot="start">
+          <ion-button (click)="goBack()">Back to Profile</ion-button>
+        </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content margins padding text-center >
+  <ion-icon name="videocam" size="large"></ion-icon>
+  <h4>Click on 'Play Video' to see if there is a video stream recording, no stream means no motion has been detected</h4>
+  <ion-button (click)="playVideo()" type="submit" color="medium" expand="full">Play video</ion-button>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="medium">
+
+  </ion-toolbar>
+</ion-footer>

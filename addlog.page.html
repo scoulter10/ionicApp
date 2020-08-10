@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="medium">
+      <ion-buttons slot="start">
+          <ion-button (click)="goBack()">Go Back to your Profile</ion-button>
+        </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content margins padding>
+
+
+  <ion-card-header color="secondary" text-center>Add a log entry</ion-card-header>
+  <ion-card width= "500px" text-center>
+    <ion-card-subtitle color="medium" padding>Enter your log in the format YYYY-MM-DD HH:MM:SS</ion-card-subtitle>
+    <ion-card-content>
+  
+      <ion-input value="dateTime" type="custom" [(ngModel)]="date_time" placeholder="enter a date and time">
+      </ion-input>
+      <ion-button   type="submit" (click)="sendData(date_time)" color="secondary" expand="full">Add log</ion-button>   
+  </ion-card-content>
+  </ion-card>
+
+  
+  <ion-card-header color="danger" text-center>Delete an existing entry</ion-card-header>
+  <ion-card width= "500px" text-center>
+    <ion-card-subtitle color="medium" padding>Enter your log in the format YYYY-MM-DD HH:MM:SS</ion-card-subtitle>
+    <ion-card-content>
+  
+      <ion-input type="custom" type="custom" [(ngModel)]="date_time" placeholder="enter a date and time">
+      </ion-input>
+      <ion-button (click)="logDelete(date_time)" color="danger" expand="full">Delete</ion-button> 
+  </ion-card-content>
+  </ion-card>
+
+  
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="medium">
+
+  </ion-toolbar>
+
+</ion-footer>

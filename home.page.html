@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar text-center color="medium">
+    <ion-title>
+      NightOwl
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content margins padding text-center style="text-align:center;">
+    <div width="full" > 
+        <img src="/assets/img/nighttime.jpg"/>
+        <p>Welcome to your companion app</p>
+        <p>enter your details below</p>
+        <ion-list lines="full" class="ion-no-margin ion-no-padding">
+            <ion-item>
+              <ion-label position="floating">Pi Name <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input name="piname" required type="text"></ion-input>
+            </ion-item>
+    
+            <ion-item>
+              <ion-label position="floating">Pi IP <ion-text color="danger">*</ion-text></ion-label>
+              <ion-input name= "piip" #piip></ion-input>
+            </ion-item>
+              <div padding-top>
+              <ion-button type="submit" expand="block" color="medium" (click)="signIn()">Log in</ion-button>
+              <ion-button type="submit" expand="block" color="light" (click)="goInfo()">Help & Info</ion-button>
+             </div>
+           
+            </ion-list>
+        
+    </div> 
+    
+
+</ion-content>
+<ion-footer width="full">
+  <ion-toolbar color="medium">
+    </ion-toolbar>
+
+</ion-footer>
